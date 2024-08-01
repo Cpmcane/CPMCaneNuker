@@ -40,12 +40,13 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name +=  " ██████╗██████╗ ███╗   ███╗███╗   ██╗██╗   ██╗██╗  ██╗███████╗██████╗\n"
-    brand_name += "██╔════╝██╔══██╗████╗ ████║████╗  ██║██║   ██║██║ ██╔╝██╔════╝██╔══██╗\n"
-    brand_name += "██║     ██████╔╝██╔████╔██║██╔██╗ ██║██║   ██║█████╔╝ █████╗  ██████╔╝\n"
-    brand_name += "██║     ██╔═══╝ ██║╚██╔╝██║██║╚██╗██║██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗\n"
-    brand_name += "╚██████╗██║     ██║ ╚═╝ ██║██║ ╚████║╚██████╔╝██║  ██╗███████╗██║  ██║\n"
-    brand_name += " ╚═════╝╚═╝     ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝\n"
+    
+    brand_name += ░█████╗░░█████╗░███╗░░██╗███████╗███╗░░██╗██╗░░░██╗/n"
+    brand_name += ██╔══██╗██╔══██╗████╗░██║██╔════╝████╗░██║██║░░░██║/n"
+    brand_name += ██║░░╚═╝███████║██╔██╗██║█████╗░░██╔██╗██║██║░░░██║/n"
+    brand_name += ██║░░██╗██╔══██║██║╚████║██╔══╝░░██║╚████║██║░░░██║/n"
+    brand_name += ╚█████╔╝██║░░██║██║░╚███║███████╗██║░╚███║╚██████╔╝/n"
+    brand_name += ░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚══════╝╚═╝░░╚══╝░╚═════╝░/n"
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
@@ -80,7 +81,7 @@ def load_key_data(cpm):
     console.print("[bold][red]========[/red][ ACCESS KEY DETAILS ][red]========[/red][/bold]")
     console.print(f"[bold green]Access Key [/bold green]: { data.get('access_key') }.")
     console.print(f"[bold green]Telegram ID[/bold green]: { data.get('telegram_id') }.")
-    console.print(f"[bold green]Credits    [/bold green]: { (data.get('coins') if not data.get('99999999999') else '99999999999) }.", end="\n\n")
+    console.print(f"[bold green]Credits    [/bold green]: { (data.get('coins') if not data.get('is_unlimited') else 'unlimited) }.", end="\n\n")
 
 def prompt_valid_value(content, tag, password=False):
     while True:
