@@ -12,7 +12,7 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-from cpmnuker import CPMNuker
+from Cpmcane import CPMCaneNuker
 
 __CHANNEL_USERNAME__ = "CPMCANETOOL"
 __GROUP_USERNAME__   = "EWAXCANE COMMUNITY"
