@@ -8,7 +8,7 @@
 ## Installation
 [don't know how to install python ?](#install-python)
 ```
-git clone https://github.com/CPMNuker/CPMNuker.git
+git clone https://github.com/Cpmcane/CaneXEwanTool
 ```
 ```
 cd CaneXEwanTool
